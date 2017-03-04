@@ -44,6 +44,7 @@ class ViewController: UIViewController {
     
     lazy var tableView: UITableView = {
         let tableV = UITableView(frame: self.view.bounds, style: .grouped)
+        tableV.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         tableV.delegate = self
         tableV.dataSource = self
         self.view.addSubview(tableV)
