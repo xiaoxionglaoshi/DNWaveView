@@ -26,6 +26,7 @@ class DNWaveView: UIView {
     // 添加波纹
     public class func add(to view: UIView, withFrame frame: CGRect) -> Any {
         let waveView = DNWaveView(frame: frame)
+        waveView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         view.addSubview(waveView)
         return waveView
     }
